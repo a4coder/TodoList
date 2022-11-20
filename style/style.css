@@ -1,0 +1,72 @@
+body {
+  background-color: #3a3a3a;
+  color: #3a3a3a;
+}
+
+#Todo_container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+#Todo_container > div {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#Todo_container > div > div {
+  background-color: #efefef;
+  width: 300px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  overflow: scroll;
+}
+
+#Todo_container > div > div img {
+  background-color: #efefef;
+  width: 100px;
+  height: 100px;
+  transition: 300ms ease;
+}
+
+#Todo_container > div:last-child > div img {
+  transform: rotate(180deg) translateY(0);
+}
+
+#todoList_box:hover img {
+  transform: translateY(10px);
+}
+
+#createTodo_box:hover img {
+  transform: rotate(180deg) translateY(10px) !important;
+}
+
+#Todo_container > div > div h3 {
+  font-size: 2.25rem;
+  margin-bottom: 2rem;
+}
+
+#todosTable {
+  background-color: #efefef;
+  width: 300px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  height: 500px;
+  border-collapse: collapse;
+}
+#todosTable th {
+  font-size: 0.9rem;
+  border: 1px solid #3a3a3a;
+}
+#todosTable td {
+  font-size: 0.85rem;
+  border: 1px solid #3a3a3a;
+}
